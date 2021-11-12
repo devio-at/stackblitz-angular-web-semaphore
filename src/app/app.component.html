@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+<p>{{semaphore.count}}</p>
+<p>
+	<button (click)="btnStart1Click()" >start 1</button>
+	<button (click)="btnStart2Click()" >start 2</button>
+	<button (click)="btnStart3Click()" >start 3</button>
+	<div *ngIf="semaphore.count != 100">** spinning **</div>
+
+	<button (click)="btnAllClick()">all buttons</button>
